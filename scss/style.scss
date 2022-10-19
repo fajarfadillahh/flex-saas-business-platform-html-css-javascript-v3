@@ -114,6 +114,11 @@ img {
   z-index: var(--z-fixed);
   transition: var(--transition-300);
 
+  // STICKY HEADER
+  &.sticky-action {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+
   &__container {
     height: var(--header-height);
     display: flex;
