@@ -189,3 +189,61 @@ img {
     cursor: pointer;
   }
 }
+
+// ===== HOME SECTION =====
+.home {
+  &__container {
+    display: grid;
+    gap: 3rem;
+  }
+
+  &__data,
+  &__img {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__data {
+    display: grid;
+  }
+
+  &__badge {
+    display: inline-flex;
+    justify-self: center;
+    padding: 0.2rem 0.8rem;
+    background-color: var(--green-color);
+    border-radius: 10rem;
+    font-size: 15px;
+    font-weight: var(--font-semibold);
+    color: var(--container-color);
+    margin-bottom: 1rem;
+  }
+
+  &__buttons {
+    display: grid;
+    gap: 1rem;
+
+    &-signup {
+      background: transparent;
+      border: 1.5px solid rgba(0, 0, 0, 0.1);
+      color: var(--title-color);
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-play {
+      position: absolute;
+      padding: 0.5rem;
+      background-color: var(--green-color);
+      border-radius: 50%;
+      font-size: 2rem;
+      color: var(--white-color);
+      cursor: pointer;
+    }
+  }
+}
