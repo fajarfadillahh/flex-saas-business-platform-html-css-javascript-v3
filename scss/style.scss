@@ -44,6 +44,30 @@ html {
   background-color: var(--container-color);
   scroll-behavior: smooth;
   transition: var(--transition-300);
+
+  // DARK MODE
+  &.dark {
+    --container-color: #2a3342;
+    --title-color: #fcfcfd;
+
+    .header__menu {
+      background-color: #444c5a;
+
+      @media screen and (min-width: 767px) {
+        background: transparent;
+      }
+    }
+
+    .home {
+      &__text {
+        color: var(--title-color);
+      }
+
+      &__buttons-signup {
+        border-color: #444c5a;
+      }
+    }
+  }
 }
 
 body {
@@ -220,7 +244,7 @@ img {
     border-radius: 10rem;
     font-size: 15px;
     font-weight: var(--font-semibold);
-    color: var(--container-color);
+    color: var(--white-color);
     margin-bottom: 1rem;
   }
 
