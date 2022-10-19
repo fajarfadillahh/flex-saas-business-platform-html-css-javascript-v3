@@ -314,3 +314,40 @@ img {
     }
   }
 }
+
+// width 968px
+@media screen and (min-width: 968px) {
+  .header {
+    &__container {
+      position: relative;
+    }
+
+    &__list {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .home {
+    &__data,
+    &__img {
+      width: auto;
+    }
+
+    &__title {
+      font-size: 48px;
+      width: 600px;
+      justify-self: center;
+    }
+
+    &__text {
+      width: 600px;
+      justify-self: center;
+    }
+
+    &__img {
+      width: 800px;
+    }
+  }
+}
